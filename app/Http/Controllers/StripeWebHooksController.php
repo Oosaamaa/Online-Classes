@@ -26,7 +26,7 @@ class StripeWebHooksController extends Controller
             //   );
 
             //   Log::info($events);
-            \Stripe\Stripe::setApiKey('sk_test_51LfcwpGCjSuNUCyBbxx01P4Oo0vGKzVW5GcPy3rJAX9xId2PbiVz8hp8oDn4dv9VzKaqIMTICN8YFt5cwX3cci7U00p6cZ8LBD');
+            \Stripe\Stripe::setApiKey('');
             $endpoint_secret = env('STRIPE_WEBHOOK_SECRET');
             if ($request->header('stripe-signature') != null) {
 
